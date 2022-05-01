@@ -9,10 +9,6 @@ export class AppComponent {
   counter = 0;
   updatedAt?: number;
 
-  get cantDescrease(): boolean {
-    return this.counter <= 0;
-  }
-
   increase(): void {
     this.updatedAt = Date.now();
     this.counter++;
